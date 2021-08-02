@@ -1,6 +1,6 @@
 import * as types from "../actions";
 
-const weatherReducer = (state = { data: [], total: 0 }, action) => {
+const weatherReducer = (state = { data: {}, weatherList: [] }, action) => {
   switch (action.type) {
     case types.FETCH_WEATHER_DATA:
       return {
@@ -11,7 +11,7 @@ const weatherReducer = (state = { data: [], total: 0 }, action) => {
       return {
         ...state,
         data: action.data,
-        total: action.data.length,
+        weatherList: action.data.list,
         loading: false,
       };
     case types.FETCH_WEATHER_DATA_ERROR:
@@ -19,6 +19,14 @@ const weatherReducer = (state = { data: [], total: 0 }, action) => {
         ...state,
         error: action.error,
         loading: false,
+      };
+    case types.FETCH_WEATHER_PAGINATION:
+      return {
+        ...state,
+        loading: false,
+        weatherList: [
+          ...state.data.list.slice(action.payload.start, action.payload.end),
+        ],
       };
 
     default:
