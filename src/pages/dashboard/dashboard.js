@@ -4,7 +4,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles, withStyles } from "@material-ui/styles";
 import Loader from "../../components/Loader";
 import Box from "@material-ui/core/Box";
-import WeatherCard from "../../components/WeatherCard";
 import Radio from "@material-ui/core/Radio";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
@@ -13,15 +12,17 @@ import { handleRequest } from "../../redux/actions/actionCreator";
 import * as types from "../../redux/actions";
 import PaginationOutlined from "../../components/Pagination";
 import Chart from "../../components/Chart";
+import WeatherCards from "../../components/WeatherCards";
 
 const useStyles = makeStyles({
   root: {
-    height: "100vh",
+    minHeight: "100vh",
+    overflow: "auto",
     width: "100%",
   },
   chart: {
-    minWidth: "30%",
-    minHeight: "30%",
+    maxWidth: "100%",
+    maxHeight: "100%",
   },
 });
 
@@ -42,10 +43,12 @@ const Dashboard = () => {
   const classes = useStyles();
   const limit = 3;
 
+  // Handle Temperature unit change
   const handleChange = (event) => {
     setSelectedTemp(event.target.value);
   };
 
+  // Fetch all weather data
   const fetchWeatherData = () => {
     dispatch(handleRequest(types.FETCH_WEATHER_DATA, selectedTemp));
   };
@@ -64,7 +67,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchWeatherData();
-  }, []);
+  }, [selectedTemp]);
 
   return (
     <React.Fragment>
@@ -113,30 +116,30 @@ const Dashboard = () => {
               display="flex"
               flexDirection="row"
               justifyContent="center"
-              m={3}
+              m={0}
             >
               <PaginationOutlined
-                pageCount={Math.ceil(
-                  weatherSelector.weatherList.length / limit
-                )}
+                pageCount={Math.ceil(weatherSelector.total / limit)}
                 gotoPage={handlePageChange}
                 pageSize={limit}
               />
             </Box>
-            <Box display="flex" alignSelf="center" p={2} my={5}>
-              {weatherSelector.weatherList.map((weather, index) => (
-                <WeatherCard
-                  data={weatherSelector.data}
-                  id={index + 1}
-                  weatherInfo={weatherSelector.weatherList}
-                  tempType={selectedTemp}
-                />
-              ))}
+            <Box
+              component="div"
+              overflow="visible"
+              display="flex"
+              flexDirection="row"
+              alignSelf="center"
+              p={2}
+              my={3}
+            >
+              <WeatherCards tempType={selectedTemp} />
             </Box>
             <Box
               display="flex"
-              alignSelf="center"
+              flexDirection="row"
               m={2}
+              alignSelf="center"
               className={classes.chart}
             >
               <Chart />

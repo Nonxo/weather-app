@@ -5,3 +5,6 @@ export const FETCH_WEATHER_DATA_ERROR = "FETCH_WEATHER_DATA_ERROR";
 
 // Weather with Pagination
 export const FETCH_WEATHER_PAGINATION = "FETCH_WEATHER_PAGINATION";
+
+// Weather forecast by Selected date
+export const FETCH_WEATHER_BY_DATE = "FETCH_WEATHER_BY_DATE";

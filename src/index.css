@@ -12,3 +12,7 @@ body {
   min-height: 100vh;
   background: #f0f5fd;
 }
+
+canvas {
+  height:100%;
+}

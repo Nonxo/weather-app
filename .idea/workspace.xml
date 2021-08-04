@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54016f8c-a42d-425a-8d22-31b01daa5ec0" name="Default Changelist" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/rainy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/snowing.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/sunny.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/dashboard.js" afterDir="false" />
+    <list default="true" id="54016f8c-a42d-425a-8d22-31b01daa5ec0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/WeatherCards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherCard.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/constant.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducer/weatherReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/weatherReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/saga/weatherSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/saga/weatherSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +94,9 @@
       <workItem from="1627680999867" duration="60000" />
       <workItem from="1627681065575" duration="4437000" />
       <workItem from="1627729276795" duration="25881000" />
-      <workItem from="1627883625660" duration="13359000" />
+      <workItem from="1627883625660" duration="13517000" />
+      <workItem from="1627977356137" duration="11112000" />
+      <workItem from="1628040303250" duration="17440000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1627648254677</created>
@@ -119,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627733958418</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add view and logic to display weather info">
+      <created>1627916387647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627916387647</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Add view and logic to display weather info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add view and logic to display weather info" />
   </component>
   <component name="WindowStateProjectService">
     <state x="581" y="349" key="#ESLint" timestamp="1627843004885">
@@ -135,10 +136,10 @@
     </state>
     <state x="581" y="349" key="#ESLint/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627843004885" />
     <state x="581" y="349" key="#ESLint/0.0.1440.900@0.0.1440.900" timestamp="1627841810640" />
-    <state x="267" y="25" key="CommitChangelistDialog2" timestamp="1627733957964">
+    <state x="267" y="25" key="CommitChangelistDialog2" timestamp="1627916387017">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627733957964" />
+    <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627916387017" />
     <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648415573" />
     <state x="579" y="354" key="Github.ShareDialog" timestamp="1627717597755">
       <screen x="0" y="0" width="1440" height="900" />
@@ -165,14 +166,19 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627842993121" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1627733962607">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1627916391478">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627733962607" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627916391478" />
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648424627" />
-    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1627900347112">
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1627990896475">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627900347112" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1627990896475" />
+    <state x="421" y="205" width="598" height="490" key="find.popup" timestamp="1628109167657">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="205" width="598" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628109167657" />
   </component>
 </project>
