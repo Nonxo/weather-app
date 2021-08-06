@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
-import { makeStyles, useTheme, withStyles } from "@material-ui/styles";
+import { makeStyles, withStyles } from "@material-ui/styles";
 import Loader from "../../components/Loader";
 import Box from "@material-ui/core/Box";
 import Radio from "@material-ui/core/Radio";
@@ -21,6 +21,10 @@ const useStyles = makeStyles({
     width: "100%",
     display: "flex",
     flexDirection: "column",
+  },
+  cards: {
+    maxWidth: "100%",
+    overflow: "auto",
   },
   chart: {
     maxWidth: "100%",
@@ -133,7 +137,7 @@ const Dashboard = () => {
               p={2}
               my={5}
               mx="auto"
-              overflow="visible"
+              className={classes.cards}
             >
               <WeatherCards tempType={selectedTemp} />
             </Box>
@@ -143,7 +147,7 @@ const Dashboard = () => {
               mx="auto"
               className={classes.chart}
             >
-              <Chart />
+              <Chart tempType={selectedTemp} />
             </Box>
           </Box>
         )}

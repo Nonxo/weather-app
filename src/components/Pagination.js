@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Pagination from "@material-ui/lab/Pagination";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
-      marginTop: theme.spacing(7),
+      marginTop: theme.spacing(0),
     },
   },
 }));

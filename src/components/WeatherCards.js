@@ -18,15 +18,15 @@ const useStyles = makeStyles({
     cursor: "pointer",
     "&:hover": {
       background: "rgba(0, 0, 0, 0.2)",
-      boxShadow: "-1px 10px 29px 0px rgba(0,0,0,0.5)",
+      boxShadow: "5px 3px 10px 0px rgba(0,0,0,0.5)",
     },
     "&:focus": {
-      boxShadow: "-1px 10px 29px 0px rgba(0,0,0,0.2)",
+      boxShadow: "5px 3px 10px 0px rgba(0,0,0,0.5)",
     },
   },
   active: {
     background: "rgba(0, 0, 0, 0.2)",
-    boxShadow: "-1px 10px 29px 0px rgba(0,0,0,0.5)",
+    boxShadow: "5px 3px 10px 0px rgba(0,0,0,0.5)",
   },
   title: {
     fontSize: 14,
@@ -56,15 +56,20 @@ const WeatherCards = ({ tempType }) => {
     return d.toDateString();
   };
 
+  // Find the index of the weather card selected
+  const findIndexOfSelectedCard = (dt) => {
+    return weatherSelector.weatherPerDay.findIndex((obj) => obj.dt === dt);
+  };
+
+  // Find the weather card selected
+  const findCardSelected = (dt) => {
+    return weatherSelector.weatherPerDay.find((obj) => obj.dt === dt);
+  };
+
   // Dispatch action to fetch weather by hour with 3hours interval
   const displayForecastPerHour = (dt) => {
-    // Find the index of the weather card selected
-    const index = weatherSelector.weatherPerDay.findIndex(
-      (obj) => obj.dt === dt
-    );
-
-    // Find the weather card selected
-    const card = weatherSelector.weatherPerDay.find((obj) => obj.dt === dt);
+    const index = findIndexOfSelectedCard(dt);
+    const card = findCardSelected(dt);
     setSelectedCard(card);
     dispatch(
       handleRequest(types.FETCH_WEATHER_BY_DATE, {
