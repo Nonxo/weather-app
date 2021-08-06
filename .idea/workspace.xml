@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54016f8c-a42d-425a-8d22-31b01daa5ec0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherCards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/__test__/dashboard.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherCards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducer/weatherReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/weatherReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/saga/weatherSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/saga/weatherSaga.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +60,7 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
@@ -73,13 +74,45 @@
       <recent name="$PROJECT_DIR$/src/redux" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.Add Redux store created from the rootReducer">
+    <configuration name="Add Redux store created from the rootReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="Add Redux store created from the rootReducer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" path-to-node="/usr/local/bin/node">
       <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
         <profiling log-folder="$APPLICATION_HOME_DIR$/bin/." />
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Add Redux store created from the rootReducer" />
+        <item itemvalue="Jest.renders learn react link" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,7 +129,7 @@
       <workItem from="1627729276795" duration="25881000" />
       <workItem from="1627883625660" duration="13517000" />
       <workItem from="1627977356137" duration="11112000" />
-      <workItem from="1628040303250" duration="17440000" />
+      <workItem from="1628040303250" duration="36242000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1627648254677</created>
@@ -119,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627916387647</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add view and logic to display weather info">
+      <created>1628112303538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628112303538</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,40 +176,44 @@
     </state>
     <state x="581" y="349" key="#ESLint/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627843004885" />
     <state x="581" y="349" key="#ESLint/0.0.1440.900@0.0.1440.900" timestamp="1627841810640" />
-    <state x="267" y="25" key="CommitChangelistDialog2" timestamp="1627916387017">
+    <state x="267" y="25" key="CommitChangelistDialog2" timestamp="1628112302958">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627916387017" />
+    <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628112302958" />
     <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648415573" />
     <state x="579" y="354" key="Github.ShareDialog" timestamp="1627717597755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="579" y="354" key="Github.ShareDialog/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648394037" />
     <state x="579" y="354" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1627717597755" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1627721482487">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1628177788574">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628177788574" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627721482487" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1627721482485">
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1628177788566">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628177788566" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627721482485" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1627721482483">
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1628177788565">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628177788565" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627721482483" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1627721482486">
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1628177788572">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628177788572" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627721482486" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1627842993121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627842993121" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1627916391478">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1628112310580">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627916391478" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628112310580" />
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648424627" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1627990896475">
       <screen x="0" y="0" width="1440" height="900" />

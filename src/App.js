@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
 import Dashboard from "./pages/dashboard/dashboard";
+import { Provider } from "react-redux";
 
-function App() {
+function App({ store }) {
   return (
-    <div className="app">
-      <Dashboard />
-    </div>
+    <Provider store={store}>
+      <div data-testid="app" className="app">
+        <Dashboard />
+      </div>
+    </Provider>
   );
 }
 

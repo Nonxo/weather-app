@@ -8,11 +8,6 @@ body {
   font-family: 'Roboto Light', sans-serif;
 }
 
-.app {
-  min-height: 100vh;
-  background: #f0f5fd;
-}
-
 canvas {
   height:100%;
 }

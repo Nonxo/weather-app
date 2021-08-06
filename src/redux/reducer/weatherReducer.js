@@ -1,7 +1,13 @@
 import * as types from "../actions";
 
 const weatherReducer = (
-  state = { data: {}, weatherList: [], weatherPerPage: [], weatherPerHour: [] },
+  state = {
+    data: {},
+    weatherList: [],
+    weatherPerPage: [],
+    weatherPerHour: [],
+    weatherPerDay: [],
+  },
   action
 ) => {
   switch (action.type) {
@@ -30,6 +36,7 @@ const weatherReducer = (
           action.payload.start,
           action.payload.end
         ),
+        weatherPerDay: getWeatherPerDay([...state.data.list]),
         total: getWeatherPerDay([...state.data.list]).length,
       };
     case types.FETCH_WEATHER_BY_DATE:

@@ -45,7 +45,7 @@ const useStyles = makeStyles({
 
 const WeatherCards = ({ tempType }) => {
   const weatherSelector = useSelector((state) => state.Weather);
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedCard, setSelectedCard] = useState({});
   const dispatch = useDispatch();
 
   const classes = useStyles();
@@ -56,13 +56,20 @@ const WeatherCards = ({ tempType }) => {
     return d.toDateString();
   };
 
-  // Dispatch action to fetch weather by date with 3hours interval
-  const displayForecastPerHour = (index) => {
-    setSelectedIndex(index);
+  // Dispatch action to fetch weather by hour with 3hours interval
+  const displayForecastPerHour = (dt) => {
+    // Find the index of the weather card selected
+    const index = weatherSelector.weatherPerDay.findIndex(
+      (obj) => obj.dt === dt
+    );
+
+    // Find the weather card selected
+    const card = weatherSelector.weatherPerDay.find((obj) => obj.dt === dt);
+    setSelectedCard(card);
     dispatch(
       handleRequest(types.FETCH_WEATHER_BY_DATE, {
-        start: index,
-        end: index + 8,
+        start: index * 8,
+        end: index * 8 + 8,
       })
     );
   };
@@ -74,12 +81,12 @@ const WeatherCards = ({ tempType }) => {
           <React.Fragment key={index + 1}>
             <Card
               className={
-                selectedIndex === index
+                selectedCard.dt === weatherInfo.dt
                   ? `${classes.root} ${classes.active}`
                   : classes.root
               }
               variant="outlined"
-              onClick={() => displayForecastPerHour(index)}
+              onClick={() => displayForecastPerHour(weatherInfo.dt)}
             >
               <CardContent>
                 <Typography className={classes.title} gutterBottom>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
-import { makeStyles, withStyles } from "@material-ui/styles";
+import { makeStyles, useTheme, withStyles } from "@material-ui/styles";
 import Loader from "../../components/Loader";
 import Box from "@material-ui/core/Box";
 import Radio from "@material-ui/core/Radio";
@@ -17,8 +17,10 @@ import WeatherCards from "../../components/WeatherCards";
 const useStyles = makeStyles({
   root: {
     minHeight: "100vh",
-    overflow: "auto",
+    overflow: "hidden",
     width: "100%",
+    display: "flex",
+    flexDirection: "column",
   },
   chart: {
     maxWidth: "100%",
@@ -72,7 +74,7 @@ const Dashboard = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Box className={classes.root} display="flex" flexDirection="column">
+      <div className={classes.root}>
         {weatherSelector.loading ? (
           <Box my="auto" mx="auto">
             <Loader />
@@ -116,7 +118,7 @@ const Dashboard = () => {
               display="flex"
               flexDirection="row"
               justifyContent="center"
-              m={0}
+              my="auto"
             >
               <PaginationOutlined
                 pageCount={Math.ceil(weatherSelector.total / limit)}
@@ -126,27 +128,26 @@ const Dashboard = () => {
             </Box>
             <Box
               component="div"
-              overflow="visible"
               display="flex"
               flexDirection="row"
-              alignSelf="center"
               p={2}
-              my={3}
+              my={5}
+              mx="auto"
+              overflow="visible"
             >
               <WeatherCards tempType={selectedTemp} />
             </Box>
             <Box
               display="flex"
               flexDirection="row"
-              m={2}
-              alignSelf="center"
+              mx="auto"
               className={classes.chart}
             >
               <Chart />
             </Box>
           </Box>
         )}
-      </Box>
+      </div>
     </React.Fragment>
   );
 };
