@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54016f8c-a42d-425a-8d22-31b01daa5ec0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WeatherCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/__test__/dashboard.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/__test__/dashboard.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +138,7 @@
       <workItem from="1627883625660" duration="13517000" />
       <workItem from="1627977356137" duration="11112000" />
       <workItem from="1628040303250" duration="37998000" />
-      <workItem from="1628248705765" duration="5687000" />
+      <workItem from="1628248705765" duration="7079000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1627648254677</created>
@@ -177,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628209359467</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Make weather cards responsive">
+      <created>1628290061074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628290061076</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +192,8 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add view and logic to display weather info" />
     <MESSAGE value="Refactor logic to display weather forecast per 3hours interval.&#10;&#10;Add test to the app.js file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor logic to display weather forecast per 3hours interval.&#10;&#10;Add test to the app.js file" />
+    <MESSAGE value="Make weather cards responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make weather cards responsive" />
   </component>
   <component name="WindowStateProjectService">
     <state x="581" y="349" key="#ESLint" timestamp="1627843004885">
@@ -195,11 +201,12 @@
     </state>
     <state x="581" y="349" key="#ESLint/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627843004885" />
     <state x="581" y="349" key="#ESLint/0.0.1440.900@0.0.1440.900" timestamp="1627841810640" />
-    <state x="267" y="25" key="CommitChangelistDialog2" timestamp="1628209357959">
+    <state x="267" y="9" key="CommitChangelistDialog2" timestamp="1628290060554">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628209357959" />
     <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648415573" />
+    <state x="267" y="9" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1628290060554" />
     <state x="579" y="354" key="Github.ShareDialog" timestamp="1627717597755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -229,19 +236,21 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627842993121" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1628209363205">
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1628290064928">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628209363205" />
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648424627" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628290064928" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1628268277403">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627900347112" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1628268277403" />
-    <state x="421" y="205" width="598" height="490" key="find.popup" timestamp="1628109167657">
+    <state x="421" y="205" width="598" height="490" key="find.popup" timestamp="1628323222371">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="421" y="205" width="598" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628109167657" />
+    <state x="421" y="205" width="598" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1628323222371" />
   </component>
 </project>

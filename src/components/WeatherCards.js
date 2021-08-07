@@ -10,14 +10,14 @@ import * as types from "../redux/actions";
 const useStyles = makeStyles({
   root: {
     minWidth: 200,
-    background: "rgba(88, 170, 255, 0.5)",
+    background: "rgba(0, 0, 0, 0.1)",
     border: "none",
     borderRadius: "15px",
     marginRight: "30px",
     marginTop: "10px",
     cursor: "pointer",
     "&:hover": {
-      background: "rgba(0, 0, 0, 0.2)",
+      background: "linear-gradient(to right, #00416a, #e4e5e6)",
       boxShadow: "5px 3px 10px 0px rgba(0,0,0,0.5)",
     },
     "&:focus": {
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     },
   },
   active: {
-    background: "rgba(0, 0, 0, 0.2)",
+    background: "linear-gradient(to right, #00416a, #e4e5e6)",
     boxShadow: "5px 3px 10px 0px rgba(0,0,0,0.5)",
   },
   title: {
