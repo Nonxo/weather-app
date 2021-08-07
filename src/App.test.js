@@ -1,8 +1,20 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render } from "@testing-library/react";
+import App from "./App";
+import React from "react";
+import "@testing-library/jest-dom/extend-expect";
+import { createStore } from "redux";
+import rootReducer from "./redux/reducer";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("Add Redux store created from the rootReducer", () => {
+  let store;
+  beforeEach(() => {
+    store = createStore(rootReducer);
+  });
+
+  test("renders learn react link", () => {
+    const component = render(<App store={store} />);
+    const appEl = component.getByTestId("app");
+
+    expect(appEl.className).toBe("app");
+  });
 });

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54016f8c-a42d-425a-8d22-31b01daa5ec0" name="Default Changelist" comment="Initial Commit" />
+    <list default="true" id="54016f8c-a42d-425a-8d22-31b01daa5ec0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/__test__/dashboard.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/__test__/dashboard.test.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -27,6 +36,7 @@
     <option name="directoryName" value="gzf3i4bq" />
   </component>
   <component name="ProjectId" id="1w1zScSArTMWCmrKOpdhqxYdhKT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,24 +45,82 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.EditorConfig" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/src/redux" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Add Redux store created from the rootReducer">
+    <configuration name="Add Redux store created from the rootReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="Add Redux store created from the rootReducer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Add Redux store created from the rootReducer.WHEN this is passed to Root" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="Add Redux store created from the rootReducer" />
+        <test-name value="WHEN this is passed to Root" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" path-to-node="/usr/local/bin/node">
       <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
         <profiling log-folder="$APPLICATION_HOME_DIR$/bin/." />
       </EXTENSION>
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Add Redux store created from the rootReducer" />
+        <item itemvalue="Jest.Add Redux store created from the rootReducer.WHEN this is passed to Root" />
+        <item itemvalue="Jest.renders learn react link" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,6 +132,13 @@
       <updated>1627640885208</updated>
       <workItem from="1627640886780" duration="2258000" />
       <workItem from="1627680234535" duration="158000" />
+      <workItem from="1627680999867" duration="60000" />
+      <workItem from="1627681065575" duration="4437000" />
+      <workItem from="1627729276795" duration="25881000" />
+      <workItem from="1627883625660" duration="13517000" />
+      <workItem from="1627977356137" duration="11112000" />
+      <workItem from="1628040303250" duration="37998000" />
+      <workItem from="1628248705765" duration="7079000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1627648254677</created>
@@ -72,7 +147,42 @@
       <option name="project" value="LOCAL" />
       <updated>1627648254679</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1627733958418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627733958418</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add view and logic to display weather info">
+      <created>1627916387647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627916387647</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add view and logic to display weather info">
+      <created>1628112303538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628112303538</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor logic to display weather forecast per 3hours interval.&#10;&#10;Add test to the app.js file">
+      <created>1628209359466</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628209359467</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Make weather cards responsive">
+      <created>1628290061074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628290061076</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,20 +190,67 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Add view and logic to display weather info" />
+    <MESSAGE value="Refactor logic to display weather forecast per 3hours interval.&#10;&#10;Add test to the app.js file" />
+    <MESSAGE value="Make weather cards responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make weather cards responsive" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="267" y="25" key="CommitChangelistDialog2" timestamp="1627648415573">
+    <state x="581" y="349" key="#ESLint" timestamp="1627843004885">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="581" y="349" key="#ESLint/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627843004885" />
+    <state x="581" y="349" key="#ESLint/0.0.1440.900@0.0.1440.900" timestamp="1627841810640" />
+    <state x="267" y="9" key="CommitChangelistDialog2" timestamp="1628290060554">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628209357959" />
     <state x="267" y="25" key="CommitChangelistDialog2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648415573" />
-    <state x="579" y="354" key="Github.ShareDialog" timestamp="1627648394037">
+    <state x="267" y="9" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1628290060554" />
+    <state x="579" y="354" key="Github.ShareDialog" timestamp="1627717597755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="579" y="354" key="Github.ShareDialog/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648394037" />
-    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1627648424627">
+    <state x="579" y="354" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1627717597755" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1628269801907">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628255088324" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1628269801907" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1628269801900">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628255088321" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1628269801900" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1628269801896">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628255088316" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1628269801896" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1628269801902">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628255088323" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1628269801902" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1627842993121">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627842993121" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1628290064928">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628209363205" />
     <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1627648424627" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628290064928" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1628268277403">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1627900347112" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1628268277403" />
+    <state x="421" y="205" width="598" height="490" key="find.popup" timestamp="1628323222371">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="205" width="598" height="490" key="find.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628109167657" />
+    <state x="421" y="205" width="598" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1628323222371" />
   </component>
 </project>

@@ -1,6 +1,9 @@
 import axios from "axios";
-import { Endpoint } from "./constant";
 
-export const getWeatherData = () => {
-  axios.get(Endpoint.WEATHER_URL).then((response) => response);
+export const getWeatherData = (unit) => {
+  return axios
+    .get(
+      `http://api.openweathermap.org/data/2.5/forecast?q=Munich,de&units=${unit}&APPID=32946e5f4d8174ff9b9dccb19bd0fefe&cnt=40`
+    )
+    .then((response) => response);
 };
