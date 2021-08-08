@@ -88,7 +88,7 @@ const getWeatherPerDay = (arr) => {
 };
 
 const formatDateStringAsTime = (input) => {
-  const date = new Date(input);
+  const date = new Date(input.replace(" ", "T"));
   const time = date.toTimeString().split(" ")[0];
   // Output what you need
   return time.split(":")[0] + ":" + time.split(":")[1];
