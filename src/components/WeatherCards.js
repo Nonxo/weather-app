@@ -52,7 +52,7 @@ const WeatherCards = ({ tempType }) => {
 
   // Format date to human readable
   const formatDate = (dateString) => {
-    const d = new Date(dateString);
+    const d = new Date(dateString.replace(" ", "T"));
     return d.toDateString();
   };
 
