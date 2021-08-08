@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Since we are programmers and sit inside the whole day we would like to have an app to check the weather outside so we do not
+actually have to go outside to see what it's like.
 
-## Available Scripts
+### Overview ###
 
-In the project directory, you can run:
+This repository contains all files and dependencies needed to contribute to the existing codebase and run the project on specific browsers such e.g Google Chrome and Firefox. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The WeatherApp contains two screens:
+* Loading screen
+* Weather info screen
 
-### `yarn start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Tools
+The core technologies utilized in this web app are:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* JavaScript - the language used to develop the core logic of the dashboard.
+* React - The JavaScript library used to building the UI interface and manage the core architecture of the dashboard.
+* Redux - This is a React dependency or library used in state management across the dashboard.
+* Redux-Saga - This is a middleware used for handling asynchronous calls and side effect.
+* Html & CSS - These help with structuring the user Interface.
+* Material-UI - This is a UI kit built with CSS to provide proper visuals and  better user experience.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How do I get set up? ###
 
-### `yarn build`
+* Install yarn if not already installed. At time of writing see: [https://yarnpkg.com](https://www.npmjs.com/get-npm)
+* Clone the repository to your to local with `git clone`
+* From the root directory run the command `yarn install` to install all dependencies in the `package.json` file. 
+* To run the project on the browser use `yarn start`
+* Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* You can also view the hosted version of the app on this [link](https://nonxo.github.io/weather-app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
