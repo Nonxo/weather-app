@@ -85,6 +85,7 @@ const WeatherCards = ({ tempType }) => {
         weatherSelector.weatherPerPage.map((weatherInfo, index) => (
           <React.Fragment key={index + 1}>
             <Card
+              data-testid="card"
               className={
                 selectedCard.dt === weatherInfo.dt
                   ? `${classes.root} ${classes.active}`
