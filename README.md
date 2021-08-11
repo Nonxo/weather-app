@@ -32,3 +32,9 @@ The core technologies utilized in this web app are:
 * You can also view the hosted version of the app on this [link](https://nonxo.github.io/weather-app/)
 
 
+### `yarn test`
+
+* From the root directory run the command `yarn test`
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
