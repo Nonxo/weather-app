@@ -13,7 +13,7 @@ const Loader = () => {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <div className={classes.root}>
+      <div data-testid="loading" className={classes.root}>
         <Skeleton />
         <Skeleton animation={false} />
         <Skeleton animation="wave" />
