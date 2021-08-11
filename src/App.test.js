@@ -1,4 +1,4 @@
-import { render, waitFor } from "@testing-library/react";
+import { act, render, waitFor } from "@testing-library/react";
 import App from "./App";
 import React from "react";
 import "@testing-library/jest-dom/extend-expect";
@@ -71,14 +71,15 @@ describe("Add Redux store created from the rootReducer", () => {
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=Munich,de&units=${unit}&APPID=32946e5f4d8174ff9b9dccb19bd0fefe&cnt=40`;
     mockCall();
 
-    const { getAllByTestId } = render(<App store={store} />);
-
     // check whats rendered on each card
-    const cardValues = await waitFor(() => {
-      getAllByTestId("card").map((card) => card.textContent);
-      expect(cardValues).toEqual([61, "light rain"]);
-      expect(axios.get).toHaveBeenCalledWith(url);
-      expect(axios.get).toHaveBeenCalledTimes(1);
+    await act(async () => {
+      const { getAllByTestId } = render(<App store={store} />);
+      const cardValues = await waitFor(() => {
+        getAllByTestId("card").map((card) => card.textContent);
+        expect(cardValues).toEqual([61, "light rain"]);
+        expect(axios.get).toHaveBeenCalledWith(url);
+        expect(axios.get).toHaveBeenCalledTimes(1);
+      });
     });
   });
 });
