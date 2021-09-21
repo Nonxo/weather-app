@@ -118,37 +118,41 @@ const Dashboard = () => {
                 label="Fahrenheit"
               />
             </Box>
-            <Box
-              display="flex"
-              flexDirection="row"
-              justifyContent="center"
-              my="auto"
-            >
-              <PaginationOutlined
-                pageCount={Math.ceil(weatherSelector.total / limit)}
-                gotoPage={handlePageChange}
-                pageSize={limit}
-              />
-            </Box>
-            <Box
-              component="div"
-              display="flex"
-              flexDirection="row"
-              p={2}
-              my={5}
-              mx="auto"
-              className={classes.cards}
-            >
-              <WeatherCards tempType={selectedTemp} />
-            </Box>
-            <Box
-              display="flex"
-              flexDirection="row"
-              mx="auto"
-              className={classes.chart}
-            >
-              <Chart tempType={selectedTemp} />
-            </Box>
+            {weatherSelector.weatherList.length > 0 && (
+              <React.Fragment>
+                <Box
+                  display="flex"
+                  flexDirection="row"
+                  justifyContent="center"
+                  my="auto"
+                >
+                  <PaginationOutlined
+                    pageCount={Math.ceil(weatherSelector.total / limit)}
+                    gotoPage={handlePageChange}
+                    pageSize={limit}
+                  />
+                </Box>
+                <Box
+                  component="div"
+                  display="flex"
+                  flexDirection="row"
+                  p={2}
+                  my={5}
+                  mx="auto"
+                  className={classes.cards}
+                >
+                  <WeatherCards tempType={selectedTemp} />
+                </Box>
+                <Box
+                  display="flex"
+                  flexDirection="row"
+                  mx="auto"
+                  className={classes.chart}
+                >
+                  <Chart tempType={selectedTemp} />
+                </Box>
+              </React.Fragment>
+            )}
           </Box>
         )}
       </div>

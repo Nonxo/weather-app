@@ -6,6 +6,7 @@ import {
   handleSuccess,
 } from "../actions/actionCreator";
 import * as types from "../actions";
+import { toast } from "react-toastify";
 
 function* read(action) {
   try {
@@ -19,11 +20,11 @@ function* read(action) {
         handleRequest(types.FETCH_WEATHER_BY_DATE, { start: 0, end: 8 })
       );
     } else {
-      yield put(
-        handleError(types.FETCH_WEATHER_DATA_ERROR, "No weather to show")
-      );
+      toast.error(res.message);
+      yield put(handleError(types.FETCH_WEATHER_DATA_ERROR, res.message));
     }
   } catch (err) {
+    toast.error("Something went wrong!");
     yield put(handleError(types.FETCH_WEATHER_DATA_ERROR, err));
   }
 }
